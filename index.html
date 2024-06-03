@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能冰箱管理系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="home" class="page">
+            <div id="header">
+                <input type="text" id="search-box" placeholder="搜尋...">
+                <button id="search-settings">⚙️</button>
+            </div>
+            <ul class="item-list">
+                <li class="item">
+                    <img src="img/apple.jpg" alt="Item Image">
+                    <div class="item-info">
+                        <h3>蘋果</h3>
+                        <p>期限：3天</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="img/banana.jpg" alt="Item Image">
+                    <div class="item-info">
+                        <h3>香蕉</h3>
+                        <p>期限：2天</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="scan" class="page">
+            <p>你可以想像成這裡有個相機畫面，這玩意用網站實在是做不出來吧。</p>
+            <p>順帶一提，這個網頁全由<a href="https://chatgpt.com/share/59c2e846-8b46-403d-b1ff-41fd71010e08"
+                    target="_blank">ChatGPT</a>所製作。</p>
+
+        </div>
+        <div id="recommend" class="page">
+            <div id="chat-window">
+                <div id="messages">
+                    <!-- Example messages -->
+                    <div class="message bot-message">Hello! How can I help you today?</div>
+                    <div class="message user-message">I need some recommendations.</div>
+                </div>
+                <div id="chat-input">
+                    <input type="text" id="chat-text" placeholder="Type a message...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <button onclick="showPage('home')">首頁</button>
+        <button onclick="showPage('scan')">掃描</button>
+        <button onclick="showPage('recommend')">智能推薦</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
